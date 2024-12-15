@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Về Chúng Tôi - Vật phẩm phong thủy</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        .about-section {
+            margin: 20px 0;
+        }
+        .about-section h2 {
+            margin-bottom: 20px;
+        }
+        .about-section p {
+            margin-bottom: 15px;
+        }
+        .about-section {
+    margin: 20px auto;
+    padding: 30px;
+    max-width: 800px;
+    background-color: #ffffff;
+    border: 1px solid rgba(247,117,33,255);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+}
+
+.about-section p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #555;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.about-section h4 {
+    font-size: 20px;
+    color: #444;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.about-section ul {
+    list-style-type: disc;
+    margin: 15px 0 0 20px;
+    padding-left: 20px;
+}
+
+.about-section ul li {
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 16px;
+}
+.container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.btn-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.btn-nav:hover {
+    opacity: 1;
+}
+
+.left-btn {
+    left: -80px; /* Đẩy nút trái ra bên ngoài */
+}
+
+.right-btn {
+    right: -70px; /* Đẩy nút phải ra bên ngoài */
+}
+    </style>
+</head>
+<body>
+    <header></header>
+    <nav>
+        <ul class="nav nav-pills nav-justified">
+            <li class="nav-item">
+                <a href="../html/index.html">TRANG CHỦ</a>
+            </li>
+            <li class="nav-item">
+                <a href="../html/vechungtoi.html">VỀ CHÚNG TÔI</a>
+            </li>
+            <li class="nav-item">
+                <a href="../html/lienhe.html">LIÊN HỆ</a>
+            </li>
+            <li class="nav-item">
+                <a href="../html/DangNhap.html"><p style="font-size: 40px; width: 50px; height: 50px;">&#128100;</p></a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class="container about-section">
+        <button class="btn-nav left-btn" onclick="goToPrevious()">&#10094; Trước</button>
+        <div class="about-section" id="section-1">
+            <h2>Về Chúng Tôi</h2>
+            <p>Vật phẩm phong thủy - luôn cung cấp và mang đến những sản phẩm phong thủy uy tín, chất lượng đến mọi người</p>
+           
+        </div>
+    
+        <div class="about-section" id="section-2" style="display: none;">
+            <h2>Sứ Mệnh Của Chúng Tôi</h2>
+            <p>Tại Vật phẩm phong thủy, đội ngũ nhân viên chuyên nghiệp am hiểu và nhiệt huyết sẽ luôn mang lại những dịch vụ tốt nhất cho khách hàng. Gửi gắm những sản phẩm phong thủy mang lại giá trị về tinh thần, tâm linh và cả vật chất đến cho mọi gia đình.</p>
+        </div>
+    
+        <div class="about-section" id="section-3" style="display: none;">
+            <h2>Tầm Nhìn Của Chúng Tôi</h2>
+            <p>Để mở rộng và khẳng định vị thế, Vật phẩm phong thủy luôn nỗ lực phấn đấu và phát triển để trở thành một trong những cửa hàng phong thủy đáng tin cậy nhất trong lòng người tiêu dùng.</p>
+        </div>
+        <button class="btn-nav right-btn" onclick="goToNext()">Tiếp &#10095;</button>
+        
+    </div>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-contact">
+                <p><strong>Hotline Support</strong><br>0376.273.319</p>
+                <p><strong>Email Us</strong><br><a href="mailto:fubao@gmail.com">phongthuy@gmail.com</a></p>
+                <p><img src="../img/H3.jpg" alt="" style="width: 60px; height: 60px;"></p> 
+            </div>
+            <div class="footer-social">
+                <p><strong>Follow Us</strong></p>
+                <a href="https://www.youtube.com/"><img src="../img/fb.jpg" alt="Facebook" /></a>
+                <a href="https://www.facebook.com/"><img src="../img/yt.png" alt="YouTube" /></a>
+                <a href="https://www.instagram.com/"><img src="../img/ig.png" alt="Instagram" /></a>
+            </div>
+            <div class="footer-payment">
+                <a href="#"><img src="../img/momo.png" alt="Momo" /></a>
+                <a href="#"><img src="../img/mcard.png" alt="MasterCard" /></a>
+                <a href="#"><img src="../img/visa.png" alt="Visa" /></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                Vật phẩm phong thủy, Số 334 Nguyễn Văn Nghi, Phường 7, Quận Gò vấp, TP. Hồ Chí Minh.<br>
+                Điện thoại: 0376.273.319. Email: phongthuy@gmail.com<br>
+                Liên hệ hợp tác, phát triển sản phẩm: phongthuy@gmail.com
+            </p>
+            <p>Copyright © 2024 Vật phẩm phong thủy</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function goToPrevious() {
+    alert("Đang chuyển về nội dung trước...");
+    // Thêm mã để chuyển đến nội dung trước
+}
+
+function goToNext() {
+    alert("Đang chuyển sang nội dung tiếp theo...");
+    // Thêm mã để chuyển đến nội dung tiếp theo
+}
+let currentSection = 1;
+const totalSections = 3;
+
+function showSection(sectionNumber) {
+    for (let i = 1; i <= totalSections; i++) {
+        document.getElementById(`section-${i}`).style.display = (i === sectionNumber) ? 'block' : 'none';
+    }
+}
+
+function goToPrevious() {
+    if (currentSection > 1) {
+        currentSection--;
+        showSection(currentSection);
+    }
+}
+
+function goToNext() {
+    if (currentSection < totalSections) {
+        currentSection++;
+        showSection(currentSection);
+    }
+}
+
+// Hiển thị phần đầu tiên khi trang được tải
+showSection(currentSection);
+    </script>
+</body>
+</html>

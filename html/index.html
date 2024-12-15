@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vật phẩm phong thủy</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<script>
+    // Danh sách sản phẩm để tìm kiếm
+    const products = [
+        { name: "Kệ hào quang trầm 45cm ", link: "../html/kehaoquangtram.html" },
+        { name: "Cây tài lộc hồ lô", link: "../html/caytailocholo.html" },
+        { name: "Ngựa mạ vàng 24cm", link: "../html/nguamavang.html" },
+        { name: "Tỳ hưu bắp cải 25cm", link: "../html/tyhuabapcai.html" },
+        { name: "Quả đào trường thọ 36cm", link: "../html/quadaotruongtho.html" },
+    ];
+
+    function searchProduct() {
+        const searchTerm = document.querySelector('.input-group input').value.toLowerCase();
+        const product = products.find(p => p.name.toLowerCase().includes(searchTerm));
+
+        if (product) {
+            // Chuyển hướng đến trang chi tiết sản phẩm
+            window.location.href = product.link;
+        } else {
+            alert("Sản phẩm không tìm thấy!");
+        }
+    }
+</script>
+<body>
+    <header></header>
+    <nav>
+        <ul class="nav nav-pills nav-justified">
+            <li class="nav-item">
+                <a href="../html/index.html">TRANG CHỦ</a>
+            </li>
+            <li class="nav-item">
+                <a href="../html/vechungtoi.html">VỀ CHÚNG TÔI</a>
+            </li>
+            <li class="nav-item">
+                <a href="../html/lienhe.html">LIÊN HỆ</a>
+            </li>
+            <li class="nav-item">
+                <div class="cart-icon">
+                    <a href="../html/cart.html"><p style="font-size: 40px; width: 50px; height: 50px;">&#128722;</p></a>
+                </div>              
+            </li>
+            <li class="nav-item">
+                <a href="../html/DangNhap.html"><p style="font-size: 40px; width: 50px; height: 50px;">&#128100;</p></a>
+            </li>
+            <li>
+                <div class="input-group mb-3" style="width: 350px; padding-top: 13px; padding-right: 20px;">
+                    <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm">
+                    <button onclick="searchProduct()" class="btn btn-danger" type="button">GO</button> 
+                </div>  
+            </li>
+        </ul>
+    </nav>
+    
+    <div id="content">
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="../img/Kệ hào quang.jpg" alt="">
+                <h3>Kệ hào quang trầm 45cm</h3>
+                <p>550,000₫</p>
+                <button class="add-to-cart"><a href="../html/kehaoquangtram.html">XEM CHI TIẾT</a></button>
+            </div>
+            <div>
+                <h3 id="tieude">SẢN PHẨM LIÊN QUAN</h3>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="../img/Đào trường thọ.png" alt="">
+                    <h3>Quả đào trường thọ 36cm</h3>
+                    <p>990,000đ</p>
+                    <button class="add-to-cart"> <a href="../html/quadaotruongtho.html">XEM CHI TIẾT</a></button>
+                </div>
+                <div class="product-card">
+                    <img src="../img/Tỳ hưu.jpg" alt="">
+                    <h3>Tỳ hưu bắp cải 25cm</h3>
+                    <p>1,290,000đ</p>
+                    <button class="add-to-cart"><a href="../html/tyhuabapcai.html">XEM CHI TIẾT</a></button>
+                </div>
+                <div class="product-card">
+                    <img src="../img/Ngựa mạ vàng.png" alt="">
+                    <h3>Ngựa mạ vàng 24cm</h3>
+                    <p>590,000đ</p>
+                    <button class="add-to-cart"><a href="../html/nguamavang.html">XEM CHI TIẾT</a></button>
+                </div>
+                <div class="product-card">
+                    <img src="../img/Cây tài lộc.png" alt="">
+                    <h3>Cây tài lộc hồ lô</h3>
+                    <p>1,390,000đ</p>
+                    <button class="add-to-cart"><a href="../html/caytailocholo.html">XEM CHI TIẾT</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-contact">
+                <p><strong>Hotline Support</strong><br>0376.273.319</p>
+                <p><strong>Email Us</strong><br><a href="mailto:fubao@gmail.com">phongthuy@gmail.com</a></p>
+                <p><img src="../img/H3.jpg" alt="" style="width: 60px; height: 60px;"></p> 
+            </div>
+            <div class="footer-social">
+                <p><strong>Follow Us</strong></p>
+                <a href="https://www.youtube.com/"><img src="../img/fb.jpg" alt="Facebook" /></a>
+                <a href="https://www.facebook.com/"><img src="../img/yt.png" alt="YouTube" /></a>
+                <a href="https://www.instagram.com/"><img src="../img/ig.png" alt="Instagram" /></a>
+            </div>
+            <div class="footer-payment">
+                <a href="#"><img src="../img/momo.png" alt="Momo" /></a>
+                <a href="#"><img src="../img/mcard.png" alt="MasterCard" /></a>
+                <a href="#"><img src="../img/visa.png" alt="Visa" /></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                Vật phẩm phong thủy, Số 334 Nguyễn Văn Nghi, Phường 7, Quận Gò vấp, TP. Hồ Chí Minh.<br>
+                Điện thoại: 0376.273.319. Email: phongthuy@gmail.com<br>
+                Liên hệ hợp tác, phát triển sản phẩm: phongthuy@gmail.com
+            </p>
+            <p>Copyright © 2024 Vật phẩm phong thủy</p>
+        </div>
+    </footer>
+</body>
+</html>

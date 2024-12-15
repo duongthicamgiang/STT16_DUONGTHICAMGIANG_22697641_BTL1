@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <style>
+        .login-card {
+            background-color: #fff; /* Màu nền trắng cho khung */
+            border-radius: 10px; /* Bo tròn các góc */
+            padding: 40px; /* Thêm khoảng cách bên trong khung */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Đổ bóng cho khung */
+            width: 450px; /* Chiều rộng khung */
+        }
+        
+        .btn-orange {
+            background-color: rgba(247,117,33,255); /* Màu nền hồng cho nút */
+            border-color: rgba(247,117,33,255); /* Màu viền hồng cho nút */
+            color: #fff; /* Màu chữ trắng */
+        }
+        
+        .btn-orange:hover {
+            background-color: rgba(247,117,33,255); /* Màu nền khi hover */
+            border-color: rgba(247,117,33,255); /* Màu viền khi hover */
+        }
+        
+
+        .divider {
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .divider span {
+            margin: 0 10px; /* Khoảng cách giữa chữ và đường gạch */
+        }
+        
+        .divider::before, .divider::after {
+            content: '';
+            flex: 1; /* Chiều dài đường gạch */
+            border-bottom: 1px solid rgba(247,117,33,255); /* Màu của đường gạch */
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <nav>
+        <ul class="nav nav-pills nav-justified">
+            <li class="nav-item">
+                <a href="../html/index.html">TRANG CHỦ</a>
+            </li>
+            <li class="nav-item">
+                <a href="../html/vechungtoi.html">VỀ CHÚNG TÔI</a>
+            </li>
+            <li class="nav-item">
+                <a href="../html/lienhe.html">LIÊN HỆ</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="login-card">
+            <h3 class="text-center mb-4 text-orange">Đăng ký</h3>
+            <div class="divider text-center mb-3"><span>Bằng tài khoản Social</span></div> 
+            <div class="social-buttons d-flex justify-content-between mb-3">
+                <button id="btn-google-register" class="btn btn-danger w-48">
+                    <i class="fab fa-google"></i> Google
+                </button>
+                <button id="btn-facebook-register" class="btn btn-primary w-48">
+                    <img src="../img/logoFB.jpg" alt="Facebook" style="width: 20px; height: 20px;"/> Facebook
+                </button>
+            </div>
+            
+            <div class="divider text-center mb-3"><span>Hoặc</span></div>
+            
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="text-center">Đăng ký tài khoản</h2>
+                        </div>
+                        <div class="card-body">
+                            <form method="post" id="registrationForm" novalidate>
+                                <div class="form-group">
+                                    <label for="username">Tài khoản:</label>
+                                </div>
+                                    <input type="text" class="form-control" id="username" name="username" placeholder="Nhập tên tài khoản..." required>
+                                    <div class="error-message" id="usernameError"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Nhập địa chỉ email..." required>
+                                    <div class="error-message" id="emailError"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Số điện thoại:</label>
+                                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Nhập số điện thoại..." required>
+                                    <div class="error-message" id="phoneError"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Mật khẩu:</label>
+                                    <input type="password" class="form-control" id="password" name="password" placeholder="Nhập mật khẩu..." required>
+                                    <div class="error-message" id="passwordError"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirmPassword">Xác nhận mật khẩu:</label>
+                                    <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Xác nhận mật khẩu..." required>
+                                    <div class="error-message" id="confirmPasswordError"></div>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">Đăng ký</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-contact">
+                <p><strong>Hotline Support</strong><br>0376.273.319</p>
+                <p><strong>Email Us</strong><br><a href="mailto:phongthuy@gmail.com">phongthuy@gmail.com</a></p>
+                <p><img src="../img/H3.jpg" alt="" style="width: 60px; height: 60px;"></p> 
+            </div>
+            <div class="footer-social">
+                <p><strong>Follow Us</strong></p>
+                <a href="https://www.youtube.com/"><img src="../img/fb.jpg" alt="Facebook" /></a>
+                <a href="https://www.facebook.com/"><img src="../img/yt.png" alt="YouTube" /></a>
+                <a href="https://www.instagram.com/"><img src="../img/ig.png" alt="Instagram" /></a>
+            </div>
+            <div class="footer-payment">
+                <a href="#"><img src="../img/momo.png" alt="Momo" /></a>
+                <a href="#"><img src="../img/mcard.png" alt="MasterCard" /></a>
+                <a href="#"><img src="../img/visa.png" alt="Visa" /></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                Vật phẩm phong thủy, Số 334 Nguyễn Văn Nghi, Phường 7, Quận Gò vấp, TP. Hồ Chí Minh.<br>
+                Điện thoại: 0376.273.319. Email: phongthuy@gmail.com<br>
+                Liên hệ hợp tác, phát triển sản phẩm: phongthuy@gmail.com
+            </p>
+            <p>Copyright © 2024 Vật phẩm phong thủy</p>
+        </div>
+    </footer>
+</body>
+</html>

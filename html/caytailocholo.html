@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cây tài lộc hồ lô</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/itemdetail.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/scripts.js"></script>
+</head>
+<style>
+   
+</style>
+<body>
+    <header></header>
+    <nav>
+        <ul class="nav nav-pills nav-justified">
+            <li class="nav-item">
+                <a href="../html/index.html">TRANG CHỦ</a>
+            </li>
+            <li class="nav-item">
+                <a href="../html/vechungtoi.html">VỀ CHÚNG TÔI</a>
+            </li>
+            <li class="nav-item">
+                <a href="../html/lienhe.html">LIÊN HỆ</a>
+            </li>
+            <li class="nav-item">
+                <div class="cart-icon">
+                    <a href="../html/cart.html"><p style="font-size: 40px; width: 50px; height: 50px;">&#128722;</p></a>
+                </div>              
+            </li>
+            <li>
+                <div class="input-group mb-3" style="width: 400px; padding-top: 13px; padding-right: 20px;">
+                    <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm">
+                    <button onclick="searchProduct()" class="btn btn-danger" type="button">GO</button> 
+                </div>  
+            </li>
+        </ul>
+    </nav>
+    <div id="content">
+        <div class="product-detail">
+            <div class="product-image">
+                <img src="../img/Cây tài lộc.png" alt="">
+            </div>
+            
+            <div class="product-info">
+                <h1>Cây tài lộc hồ lô</h1>
+                <p><strong>Thông tin sản phẩm:</strong> Chiều ngang 30cm x Chiều rộng 12cm x Chiều cao 30cm </p>
+                <p><strong>Chất liệu:</strong> Đá Thạch Anh</p>
+                <p><strong>Xuất xứ:</strong> Nhập khẩu</p>
+                <p class="product-price">1,390,000₫</p>
+                
+                <div class="stock-info">
+                    <p><strong>63</strong> còn hàng</p>
+                </div>
+                
+                <div class="quantity-selector">
+                    <label for="quantity">Số lượng:</label>
+                    <input type="number" id="quantity" value="1" min="1">
+                </div>
+                <p class="wishlist"><a href="#">♡ Sản phẩm yêu thích</a></p>
+                
+                <p class="product-sku"><strong>SKU:</strong> 290010695031</p>
+                <p>EDP 80ml</p>
+                <p>Khu vực giao hàng: Toàn quốc</p>
+                <button class="add-to-cart">THÊM VÀO GIỎ +</button>
+            </div>
+        </div>
+        <hr style="height: 2px; color: orange;">
+        <div id="description" class="tab-content active">
+            <h2>THÔNG TIN VỀ SẢN PHẨM</h2>
+            <p><strong>Chi tiết</strong></p>
+            <ul>
+                <li>Cây Chiêu Tài Hồ Lô là vật phẩm biểu tượng cho sự sung túc, mang tài vận may mắn và như ý cát tường.Hồ Lô giúp thu hút cát khí ngăn chặn tà khí đồng thời mang đến sức khỏe và thường thọ.</li>
+            </ul>
+            <br>
+            <p>Trưng bày trong gia đình hay trao tặng một chậu cây chiêu tài cũng là một sự ý nhị mà bạn muốn gửi gắm mong cầu mọi điều tốt đẹp đến với bạn bè, người thân hay đồng nghiệp của mình.
+                </p>
+        </div>
+        <div>
+            <h3 id="tieude">SẢN PHẨM LIÊN QUAN</h3>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="../img/Đào trường thọ.png" alt="">
+                    <h3>Quả đào trường thọ 36cm</h3>
+                    <p>990,000đ</p>
+                    <button class="add-to-cart"> <a href="../html/quadaotruongtho.html">XEM CHI TIẾT</a></button>
+                </div>
+                <div class="product-card">
+                    <img src="../img/Tỳ hưu.jpg" alt="">
+                    <h3>Tỳ hưu bắp cải 25cm</h3>
+                    <p>1,290,000đ</p>
+                    <button class="add-to-cart"><a href="../html/tyhuabapcai.html">XEM CHI TIẾT</a></button>
+                </div>
+                <div class="product-card">
+                    <img src="../img/Ngựa mạ vàng.png" alt="">
+                    <h3>Ngựa mạ vàng 24cm</h3>
+                    <p>590,000đ</p>
+                    <button class="add-to-cart"><a href="../html/nguamavang.html">XEM CHI TIẾT</a></button>
+                </div>
+                <div class="product-card">
+                    <img src="../img/Kệ hào quang.jpg" alt="">
+                    <h3>Kệ hào quang trầm 45cm</h3>
+                    <p>500,000đ</p>
+                    <button class="add-to-cart"><a href="../html/kehaoquangtram.html">XEM CHI TIẾT</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-contact">
+                <p><strong>Hotline Support</strong><br>0376.273.319</p>
+                <p><strong>Email Us</strong><br><a href="mailto:fubao@gmail.com">phongthuy@gmail.com</a></p>
+                <p><img src="../img/H3.jpg" alt="" style="width: 60px; height: 60px;"></p> 
+            </div>
+            <div class="footer-social">
+                <p><strong>Follow Us</strong></p>
+                <a href="https://www.youtube.com/"><img src="../img/fb.jpg" alt="Facebook" /></a>
+                <a href="https://www.facebook.com/"><img src="../img/yt.png" alt="YouTube" /></a>
+                <a href="https://www.instagram.com/"><img src="../img/ig.png" alt="Instagram" /></a>
+            </div>
+            <div class="footer-payment">
+                <a href="#"><img src="../img/momo.png" alt="Momo" /></a>
+                <a href="#"><img src="../img/mcard.png" alt="MasterCard" /></a>
+                <a href="#"><img src="../img/visa.png" alt="Visa" /></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                Vật phẩm phong thủy, Số 334 Nguyễn Văn Nghi, Phường 7, Quận Gò vấp, TP. Hồ Chí Minh.<br>
+                Điện thoại: 0376.273.319. Email: phongthuy@gmail.com<br>
+                Liên hệ hợp tác, phát triển sản phẩm: phongthuy@gmail.com
+            </p>
+            <p>Copyright © 2024 Vật phẩm phong thủy</p>
+        </div>
+    </footer>
+    <script>
+        // Khởi tạo giỏ hàng từ localStorage hoặc là một mảng trống nếu chưa có gì
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        // Hàm lưu giỏ hàng vào localStorage
+        function saveCart() {
+            localStorage.setItem('cart', JSON.stringify(cart));
+        }
+
+        // Hàm thêm sản phẩm vào giỏ hàng
+        function addToCart(product) {
+            // Kiểm tra nếu sản phẩm đã có trong giỏ hàng
+            const existingProduct = cart.find(item => item.sku === product.sku);
+
+            if (existingProduct) {
+                // Nếu sản phẩm đã có thì tăng số lượng
+                existingProduct.quantity += product.quantity;
+            } else {
+                // Nếu chưa có sản phẩm thì thêm mới vào giỏ hàng
+                cart.push(product);
+            }
+            saveCart();
+            alert("Sản phẩm đã được thêm vào giỏ hàng!");
+            updateCartCount();  // Cập nhật số lượng hiển thị của giỏ hàng
+        }
+
+        // Sự kiện cho nút "THÊM VÀO GIỎ"
+        document.querySelector('.add-to-cart').addEventListener('click', function () {
+            const product = {
+                name: document.querySelector('h1').innerText, // Lấy tên sản phẩm từ tiêu đề
+                price: parseInt(document.querySelector('.product-price').innerText.replace('₫', '').replace(',', '').trim()), // Lấy giá sản phẩm và chuyển đổi về kiểu số
+                sku: document.querySelector('.product-sku').innerText.match(/\d+/g).join(''), // Lấy SKU
+                quantity: parseInt(document.getElementById('quantity').value), // Lấy số lượng từ input
+                image: document.querySelector('.product-image img').src // Lấy đường dẫn hình ảnh
+            };
+            addToCart(product);
+        });
+
+        // Hàm cập nhật số lượng sản phẩm trong giỏ hàng
+        function updateCartCount() {
+            const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
+            const cartCountElement = document.getElementById('cart-count');
+            if (cartCountElement) {
+                cartCountElement.innerText = cartCount;
+            }
+        }
+
+        // Cập nhật giỏ hàng khi trang được tải
+        updateCartCount();
+    </script>
+</body>
+</html>
